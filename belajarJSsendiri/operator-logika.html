@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Belajar Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      //operator logika ada 3
+      // && = Dan
+      // || = Atau
+      // !  = Kebalikan
+
+      // && = wajib kedua nilai true maka baru true
+      // || = jika salah satu nilai true maka iya akan true
+      // ! = jika nilai true, maka nilai menjadi false, dan sebaliknya
+
+      //example &&
+      const nilaiUjian = 70;
+      const nilaiAbsensi = 70;
+
+      const lulusUjian = nilaiUjian > 75;
+      const lulusAbsensi = nilaiAbsensi > 75;
+
+      const keterangan = lulusUjian && lulusAbsensi;
+
+      if(keterangan == false){
+        document.writeln("Kamu tidak lulus")
+      } else {
+        document.writeln("Kamu lulus")
+      }
+      // document.writeln("<p>" + keterangan + "</p>")
+
+
+    </script>
+  </body>
+</html>

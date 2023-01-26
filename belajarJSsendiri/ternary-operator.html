@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Ternary Operator</title>
+  </head>
+  <body>
+    <script>
+      let bmi = 18.6;
+      let weightStatus = bmi < 18.5 ? "Underweight" : bmi >= 18.5 && bmi <= 4.9 ? "Healthy Weight" : bmi >= 25 && bmi <= 29.9 ? "Overweight" : "Obesity";
+      document.writeln(weightStatus);
+      document.writeln("</br>");
+
+      //----------------------------------------------//
+
+      const nilai = 80;
+      let ucapan;
+
+      if (nilai >= 75) {
+        ucapan = "Selamat Nilai Anda Lulus";
+      } else {
+        ucapan = "goblok";
+      }
+
+      document.writeln(ucapan);
+      document.writeln("</br>");
+
+      //------------------------------------------------//
+
+      //IF DALAM IF
+
+      let age1 = 17;
+      let state1 = "CA";
+
+      if (state1 == "CA") {
+        if (age1 >= 16) {
+          document.writeln("You Can Drive");
+        } else {
+          document.writeln(`tidak lulus`);
+        }
+      } else {
+        document.writeln("tidak boleh drive");
+      }
+
+      //-------------------------------------------------//
+    </script>
+  </body>
+</html>

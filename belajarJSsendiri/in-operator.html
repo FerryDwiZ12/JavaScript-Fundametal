@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator In</title>
+  </head>
+  <body>
+    <script>
+      // in operator bukan mengambil/menampilkan value, tetapi in berguna untuk mengecek apakah ada data yang diminta
+      const person = {
+        firstName: "Zul",
+        lastName: "pli",
+      };
+      if ("firstName" in person === undefined) {
+        //undifine cuma iseng
+        alert(`Hallo ${person.firstName}`);
+      } else {
+        alert("Tidak ada gan");
+      }
+    </script>
+  </body>
+</html>

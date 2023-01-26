@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Belajar String Templete</title>
+</head>
+<body>
+    <script>
+        
+        const namaLengkap = "Ferry Dwi Zulkhifli"
+        const umur = " 22 Tahun "
+        const name = `name : ${namaLengkap} ${umur} `
+        console.info(name)
+
+        //Expresion Di String Template
+
+        const awal = "Zul";
+        const value = 70;
+
+        const hasil = `Nama : ${awal}, Lulus : ${value > 76}`; //bolean
+        console.info(hasil);
+
+        //Multiline String
+
+        let MultilineString = ` nama paijem,
+        sekarang ngantok,
+        naik haji,
+        jalan-jalan`;
+
+        document.writeln(MultilineString)
+
+    </script>
+</body>
+</html>

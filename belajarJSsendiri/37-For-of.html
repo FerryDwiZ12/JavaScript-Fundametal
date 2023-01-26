@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For In</title>
+  </head>
+  <body>
+    <script>
+      //For if digunakan digunakan mengiterasi terhadap isi value dari iterable object, seperty array, string, dll
+      //For of tidak bisa digunakan untuk melakukan iterasi data di object, karena object bukanlah iterable
+
+      const names = ["Ferry", "Dwi", "Zulkhifli"];
+      for (const name of names) {
+        document.writeln(`<p> ${name}`);
+      }
+
+      const fullName = "Ferry Dwi Zulkhifli";
+
+      for (const caracter of fullName) {
+        document.writeln(`<p> ${caracter} </p>`);
+      }
+    </script>
+  </body>
+</html>

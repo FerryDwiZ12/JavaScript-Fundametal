@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Belajar NaN (not a numeber) </title>
+  </head>
+  <body>
+    <script>
+      document.writeln(`<p>${parseInt("salah")}</p>`)    // Output NaN karena "salah" bukan angka tetapi dia tidak akan error
+      document.writeln(`<p>${parseFloat("1.1text")}</p>`)   //  Output 1.1 , kata "text" akan diabaikan
+
+      //number() tidak akan mentoleren keasalah pada data 
+
+      document.writeln(`<p>${Number("1.1text")}</p>`) //NaN
+      document.writeln(`<p>${Number("1X")}</p>`) //NaN
+      document.writeln(`<p>${Number("bukan number")}</p>`) //NaN
+
+      // OPERASI PADA NAN
+
+      document.writeln(`</br>`)
+
+      const value1 = Number("salah"); //NaN
+      const value2 = 100;
+      const sum    = value1 + value2; //NaN
+
+      document.writeln(`<p>${sum}</p>`)
+
+      //isNaN() Function = hasil merupakan Bolean
+
+      document.writeln(`<p>${isNaN(value1)}</p>`) //output true, karena variabel value 1 NaN
+      document.writeln(`<p>${isNaN(100)}</p>`) //output false, karena variabel 100 number
+
+
+    </script>
+  </body>
+</html>

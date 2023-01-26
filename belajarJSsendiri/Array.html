@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Array</title>
+  </head>
+  <body>
+    <script>
+      //OPERASI DI ARRAY
+      // - array.push(value)           = Menambahkan nilai ke Array, jika ingin memasukan nilai lebih tambahkan koma
+      // - array.length                = Untuk mendapatkan panjang array
+      // - array[index]                = Mendapatkan nilai array berdasarkan index
+      // - array.[index]=value         = Mengubah data diposisi index
+      // - delete array[index]         = Menghapus data diposisi Index, namun index tidak bergeser
+
+      let arrayName = ["Ferry", "Dwi", "Zulkhifli"]; // 8, true
+      document.writeln(arrayName[2]); // Memanggil index ke 1 yaitu DWI
+
+      document.writeln("</br>");
+
+      let namaLengkap = [5];
+
+      //menambahkan data array
+      namaLengkap.push("tambahan"); //menamah nilai arrayName
+      document.writeln(namaLengkap[0]);
+
+      document.writeln("</br>");
+      document.writeln(namaLengkap.length + " : panjang array"); //melihat panjang array
+    </script>
+  </body>
+</html>
